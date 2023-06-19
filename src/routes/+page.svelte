@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Benjamín Zambelil</title>
+	<title>Benjamín Zambelli</title>
 	<meta name="description" content="Ben personal website" />
 </svelte:head>
 
