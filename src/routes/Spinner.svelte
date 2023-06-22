@@ -52,4 +52,11 @@
         position: absolute;
         opacity: 1;
     }
+
+    i {
+        color: gray;
+    }
+    i:hover {
+        color: #00ffff;
+    }
 </style>

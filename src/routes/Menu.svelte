@@ -12,6 +12,7 @@
             <li aria-current={$page.url.pathname === "/" ? "page" : undefined}>
                 <a href="/" class:selected={$page.url.pathname === "/"}>Home</a>
             </li>
+
             <li
                 aria-current={$page.url.pathname === "/works"
                     ? "page"
@@ -19,7 +20,8 @@
             >
                 <a
                     href="/projects"
-                    class:selected={$page.url.pathname === "/projects"}>Projects</a
+                    class:selected={$page.url.pathname === "/projects"}
+                    >Projects</a
                 >
             </li>
             <li
@@ -40,16 +42,16 @@
 {/if}
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
     nav {
         text-align: center;
-        font-size: 1.5em;
+        font-size: 2rem;
         letter-spacing: 0.15em;
-        padding: 1em;
+        padding: 10px;
         padding-top: 0;
         color: #eef;
-        font-family: 'Bangers', cursive;
+        font-family: "Bangers", cursive;
         font-size: 1.5rem;
     }
 
@@ -62,7 +64,7 @@
     }
 
     li {
-        margin: 0 1em;
+        margin: 0 20px;
     }
 
     a {

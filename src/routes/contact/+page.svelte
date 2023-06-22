@@ -81,7 +81,7 @@
 				id="name"
 				bind:value={name}
 				required
-				placeholder="Your name (required)"
+				placeholder="Your name"
 			/>
 
 			<label for="email">Email*</label>
@@ -90,7 +90,7 @@
 				id="email"
 				bind:value={email}
 				required
-				placeholder="Your email (required)"
+				placeholder="Your email"
 			/>
 
 			<label for="subject">Subject*</label>
@@ -99,14 +99,14 @@
 				id="subject"
 				bind:value={subject}
 				required
-				placeholder="Your subject (required)"
+				placeholder="Your subject"
 			/>
 
 			<label for="message">Message*</label>
 			<textarea
 				id="message"
 				bind:value={message}
-				placeholder="Your message (required)"
+				placeholder="Your message"
 				required
 				style="height:100px"
 			/>

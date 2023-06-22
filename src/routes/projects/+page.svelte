@@ -1,4 +1,9 @@
 <script>
+	import project_1 from "../../lib/images/Investment_Opportunities.jpg";
+	import plane1 from "../../lib/images/plane2.png";
+	import api from "../../lib/images/api.png";
+
+	import Card from "./Card.svelte";
 </script>
 
 <svelte:head>
@@ -6,20 +11,28 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<div class="text-column">
-	<h1>Featured Projects</h1>
+<div class="container">
+	<Card
+		title="Data-Driven Analysis of User Opinion for Investment Opportunities in the US Personal Care and Aesthetics Industry"
+		image={project_1}
+		project="project_1"
+	/>
+
+	<Card
+		title="Analysis of Airplane Crashes and Aviation Safety"
+		image={plane1}
+		project="project_2"
+	/>
+
+	<Card title="Movie Recommendation System" image={api} project="project_3"/>
 </div>
 
 <style>
-	@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-
-	.text-column {
-		color: white;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 	}
 
-	h1 {
-		text-align: center;
-		font-size: 2rem;
-		font-family: "Varela Round", sans-serif;
-	}
 </style>
