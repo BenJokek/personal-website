@@ -2,22 +2,28 @@
     let socialLinks = [
         {
             name: "LinkedIn",
-            icon: "fa-linkedin",
+            icon: "fa-brands fa-linkedin",
             url: "https://www.linkedin.com/in/benjamin-zambelli/",
             color: "gray",
         },
         {
             name: "GitHub",
-            icon: "fa-square-github",
+            icon: "fa-brands fa-square-github",
             url: "https://github.com/BenJokek",
             color: "gray",
         },
         {
             name: "YouTube",
-            icon: "fa-youtube",
+            icon: "fa-brands fa-youtube",
             url: "https://www.youtube.com/channel/UCHAtb9BayfnlFDCGXKMiysA",
             color: "gray",
         },
+        {
+            name: "Resume",
+            icon: "fa-solid fa-file",
+            url: "https://drive.google.com/file/d/1F41PiKibBZF_gyktlLQ7Z03EQ6hNP_2p/view?usp=sharing",
+            color: "gray",
+        }
     ];
 
     function handleMouseEnter(index) {
@@ -52,7 +58,7 @@
                 style="color: {link.color}"
             >
                 <i
-                    class={"fa-brands " + link.icon + " fa-2xl"}
+                    class="{link.icon} fa-2xl"
                     style="color: {link.color}"
                 /><br />
                 <span class="socials">{link.name}</span>
@@ -65,7 +71,6 @@
     ul {
         list-style: none;
         margin: 20px;
-        margin-bottom: 0px;
         display: flex;
     }
     li {
@@ -73,11 +78,16 @@
     }
 
     .socials {
-        padding: 20px;
-        /* color: #808080; */
+        padding: 5px;
     }
 
-    .fa-brands {
+    .fa-2xl {
         padding: 25px;
     }
+
+    @media (min-width: 800px) {
+		.fa-2xl {
+        padding: 40px;
+    }
+	}
 </style>
