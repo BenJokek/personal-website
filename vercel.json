@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "backend.py",
+        "use": "@vercel/python"
+      },
+      {
+        "src": "src",
+        "use": "@sveltejs/adapter-vercel"
+      }
+    ],
+    "routes": [
+      { "handle": "filesystem" },
+      {
+        "src": "/api/.*",
+        "dest": "backend.py"
+      }
+    ]
+  }
+  
