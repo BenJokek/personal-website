@@ -19,6 +19,8 @@
 	"type": "module",
 	"dependencies": {
 		"@vercel/analytics": "^1.0.1",
-		"yup": "^1.2.0"
+		"yup": "^1.2.0",
+		"svelte": "^3.42.1",
+    	"svelte-routing": "^1.4.2"
 	}
 }

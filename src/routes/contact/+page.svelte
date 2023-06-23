@@ -37,7 +37,7 @@
 			isSubmitting = true;
 
 			const response = await fetch(
-				"https://contact-form-backend-2.onrender.com/submit-form",
+				"/api/submit-form",
 				{
 					method: "POST",
 					headers: {
