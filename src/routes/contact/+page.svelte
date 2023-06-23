@@ -37,7 +37,7 @@
 			isSubmitting = true;
 
 			const response = await fetch(
-				"/api/submit-form",
+				"../api/submit-form.js",
 				{
 					method: "POST",
 					headers: {
