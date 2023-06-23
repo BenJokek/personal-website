@@ -21,7 +21,7 @@
         {
             name: "Resume",
             icon: "fa-solid fa-file",
-            url: "https://drive.google.com/file/d/1F41PiKibBZF_gyktlLQ7Z03EQ6hNP_2p/view?usp=sharing",
+            url: "https://drive.google.com/file/d/1MKVrh2m9680c6IpxXJGZX1LYNkNed_Yy/view?usp=sharing",
             color: "gray",
         }
     ];
